@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesión</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+		table {
+			border: 2px solid #ff9033;
+			background-color: gold;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		td {
+			padding: 8px;
+		}
+		input[type=text], input[type=password] {
+			width: 95%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 10px;
+		}
+		label {
+			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		input[type=submit] {
+			background-color: #1C94C8;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+		}
+		input[type=submit]:hover {
+			background-color: #0d78a8;
+		}
+		a {
+			text-decoration: none;
+			color: #0033cc;
+			font-weight: bold;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="login.php">
+		<table>
+			<tr>
+				<td colspan="2" style="background-color: #33A8DB; text-align: center; padding: 10px; border-radius: 5px;">
+					<label style="color: white; font-size: 16px;">SIR.ROBERTO</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" rowspan="5"><img src="cecytem.png" alt="Logo"></td>
+			<td><label>Usuario</label></td></tr>
+			<tr><td><input type="text" name="txtusuario" required></td></tr>
+			<tr><td><label>Password</label></td></tr>
+			<tr><td><input type="password" name="txtpassword" required></td></tr>
+			<tr><td><input type="submit" value="Ingresar"></td></tr>
+			<tr><td colspan="2" style="text-align: center; padding-top: 10px;">
+					<a href="index2.php">Registrarse</a></td></tr>
+		</table>
+	</form>
+</body>
+</html>
